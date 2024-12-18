@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dédicace à Fadouma la Sorcière</title>
+  <title>Hacked by tismo/ayoubbbbbbbbA 7− → D B 7− → E C </title>
   <style>
     body {
       margin: 0;
       overflow: hidden;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #001f3f, #00132a);
-      color: white;
+      font-family: 'Courier New', monospace;
+      background: black;
+      color: #00ff00;
       text-align: center;
       position: relative;
       height: 100vh;
@@ -21,7 +21,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 2rem;
+      font-size: 1.5rem;
       z-index: 10;
     }
 
@@ -29,23 +29,24 @@
       margin-top: 20px;
       padding: 10px 20px;
       font-size: 1.5rem;
-      border: none;
-      background: #ff4136;
-      color: white;
+      border: 2px solid #00ff00;
+      background: black;
+      color: #00ff00;
       cursor: pointer;
       border-radius: 5px;
     }
 
     #button:hover {
-      background: #ff725c;
+      background: #003300;
     }
 
-    .snowflake {
+    .code-line {
       position: absolute;
       top: -10px;
-      color: white;
-      font-size: 1.5rem;
+      color: #00ff00;
+      font-size: 1rem;
       animation: fall linear infinite;
+      white-space: nowrap;
     }
 
     @keyframes fall {
@@ -72,11 +73,11 @@
 </head>
 <body>
   <div id="center-text">
-    <p>Vous savez c'est qui la plus grosse menteuse des 3A ?</p>
-    <button id="button">Je veux savoir</button>
+    <p>Hackccccc=A 7− → D B 7− → E C hacked by tismo/ayoub</p>
+    <button id="button">hackedby ayoub tismo/arA 7− → D B 7− → E C </button>
   </div>
 
-  <div id="name-display">Fadouma</div>
+  <div id="name-display">hacked by adazead ayoub tismo /aoubb🫠</div>
 
   <audio id="reveal-sound" src="nimco-happy-isii-nafta-love-you-more-than-my-life-best-song-official-vid_VMxHIjXx.mp3"></audio>
 
@@ -85,26 +86,35 @@
     const nameDisplay = document.getElementById('name-display');
     const revealSound = document.getElementById('reveal-sound');
 
-    // Create snowflakes
-    function createSnowflake() {
-      const snowflake = document.createElement('div');
-      snowflake.className = 'snowflake';
-      snowflake.textContent = getRandomMathSymbol();
-      snowflake.style.left = Math.random() * 100 + 'vw';
-      snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
-      document.body.appendChild(snowflake);
+    // Create falling code lines
+    function createCodeLine() {
+      const codeLine = document.createElement('div');
+      codeLine.className = 'code-line';
+      codeLine.textContent = getRandomCodeLine();
+      codeLine.style.left = Math.random() * 100 + 'vw';
+      codeLine.style.animationDuration = Math.random() * 3 + 2 + 's';
+      document.body.appendChild(codeLine);
 
-      snowflake.addEventListener('animationend', () => {
-        snowflake.remove();
+      codeLine.addEventListener('animationend', () => {
+        codeLine.remove();
       });
     }
 
-    function getRandomMathSymbol() {
-      const symbols = ['∑', '√', 'π', '∞', '∆', '∫', '∂', '≈', '∇'];
-      return symbols[Math.floor(Math.random() * symbols.length)];
+    function getRandomCodeLine() {
+      const lines = [
+        'if (hacked) { alert("Gotcha!"); }',
+        'console.log("System breached");',
+        '01010101 10101010 11100011',
+        'sudo rm -rf /',
+        'ACCESS GRANTED',
+        '01110011 01110101 01100011',
+        'fetch("/secrets")',
+        'System.out.println("Hack complete");'
+      ];
+      return lines[Math.floor(Math.random() * lines.length)];
     }
 
-    setInterval(createSnowflake, 200);
+    setInterval(createCodeLine, 200);
 
     // Button functionality
     button.addEventListener('click', () => {
